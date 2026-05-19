@@ -4,20 +4,26 @@
 
 ## For Dagshub:
 
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/MLflow-Basic-Demo.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+
+import dagshub
+dagshub.init(repo_owner='chimdi247', repo_name='MLflow-Basic-Demo', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+
+
 
 
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/MLflow-Basic-Demo.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/chimdi247/MLflow-Basic-Demo.mlflow
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+export MLFLOW_TRACKING_USERNAME=chimdi247 
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_PASSWORD=da92e1ed735cc673de2dbc8e336ad885382c2c3d
 
 
 ```
