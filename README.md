@@ -15,7 +15,7 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/chimdi247/MLflow-Basic-Demo.mlflo
 
 export MLFLOW_TRACKING_USERNAME=chimdi247 
 
-export MLFLOW_TRACKING_PASSWORD=da92e1ed735cc673de2dbc8e336ad885382c2c3d
+export MLFLOW_TRACKING_PASSWORD= YOUR PAT
 
 
 ```
