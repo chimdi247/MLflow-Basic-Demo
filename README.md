@@ -5,14 +5,6 @@
 ## For Dagshub:
 
 
-import dagshub
-dagshub.init(repo_owner='chimdi247', repo_name='MLflow-Basic-Demo', mlflow=True)
-
-import mlflow
-with mlflow.start_run():
-  mlflow.log_param('parameter name', 'value')
-  mlflow.log_metric('metric name', 1)
-
 
 
 
